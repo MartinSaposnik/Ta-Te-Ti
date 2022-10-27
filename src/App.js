@@ -1,10 +1,19 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Board from './components/Board/Board';
 
-function App() {
+const App = () => {
+
+  const [turno, setTurno] = useState('X')
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  const [score, setScore] = useState({
+    X:0,
+    O:0,
+  });
+
   return (
-    <div className="App">
-      <h1>Ta Te Ti</h1>
+    <div className="container">
+      <Board squares={squares}/>
     </div>
   );
 }

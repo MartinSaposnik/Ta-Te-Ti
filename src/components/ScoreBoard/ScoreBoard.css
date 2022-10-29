@@ -6,14 +6,14 @@
 }
 
 .score-board div {
-    color: white;
+    color: #2192FF;
     text-align: center;
     font-size: 2em;
     padding: 5px;
     font-weight: bold;
-    background-color: #4392F1;
+    background-color: #FDFF00;
 }
 
 .score-board div:first-child {
-    background-color: #CD493A;
+    background-color: #9CFF2E;
 }
